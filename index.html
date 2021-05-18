@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Password Generator</title>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1>Password Generator</h1>
+    <table>
+        <tr>
+            <td><label for="passwordlength">Password Length: </label></td>
+            <td><input type="number" id="passwordlength" value="0" min="0"></td>
+        </tr>
+        <tr>
+            <td><label for="symbols">Include Symbols: </label></td>
+            <td><input type="checkbox" id="symbols">@#$%...</td>
+        </tr>
+        <tr>
+            <td><label for="numbers">Include Numbers: </label></td>
+            <td><input type="checkbox" id="numbers">1234...</td>
+        </tr>
+        <tr>
+            <td><label for="lowercase">Include Lowercase Alphabets: </label></td>
+            <td><input type="checkbox" id="lowercase">abcd...</td>
+        </tr>
+        <tr>
+            <td><label for="uppercase">Include Uppercase Alphabets: </label></td>
+            <td><input type="checkbox" id="uppercase">ABCD...</td>
+        </tr>
+        <tr>
+            <td><label for="similarchar">Exclude Similar Characters: </label></td>
+            <td><input type="checkbox" id="similarchar">1Ilo0O</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center;"><input type="button" value="Generate Password" id="button"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p id="alert"></p>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="generatedpassword">Generated Password: </label></td>
+            <td class="buttonIn"><input type="text" id="generatedpassword" disabled>
+                <button id="clear" onclick="copypass();"><i style="font-size:24px" class="fa">&#xf0c5;</i></button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p id="message"></p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+<script src="script.js"></script>
+
+</html>
