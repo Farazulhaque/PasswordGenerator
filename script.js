@@ -53,7 +53,6 @@ function generatePassword() {
           }
         }
       }
-      document.getElementById("generatedpassword").removeAttribute("disabled");
       for (var i = 0; i <= passwordlength; i++) {
         var indx = Math.floor(Math.random() * passtext.length);
         generatedRandomPassword += passtext.substring(indx, indx + 1);

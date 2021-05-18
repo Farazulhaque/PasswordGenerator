@@ -6,7 +6,6 @@ h1 {
   text-align: center;
 }
 table {
-
   width: 40%;
   margin-left: auto;
   margin-right: auto;
@@ -46,8 +45,12 @@ td {
   height: 20px;
   font-size: 12pt;
   padding: 2px;
-  outline: none;
   font-weight: bold;
+}
+input:disabled {
+  background: white;
+  outline: none;
+  border: none;
 }
 .buttonIn {
   position: relative;
