@@ -51,7 +51,7 @@ td {
 .buttonIn {
   position: relative;
 }
-#clear {
+#copy {
   position: absolute;
   top: 0;
   border-radius: 5px;
@@ -64,12 +64,20 @@ td {
   background-color: #fcfcfc;
   transform: translateX(2px);
 }
-#clear:hover {
+#copy:hover {
   color: black;
+  cursor: copy;
 }
 #message {
   text-align: center;
   color: green;
+}
+tbody > tr > :nth-child(2) {
+  display: flex;
+  text-align: center;
+}
+input[type="checkbox"]:hover {
+  cursor: pointer;
 }
 @media only screen and (max-width: 1100px) {
   table {
@@ -84,6 +92,9 @@ td {
     margin-left: auto;
     margin-right: auto;
   }
+  #copy {
+    right: 10px;
+  }
 }
 @media only screen and (max-width: 620px) {
   table {
@@ -94,7 +105,8 @@ td {
   #button {
     width: 50%;
   }
-  #clear {
-    top: 6px;
+  #copy {
+    right: 4px;
+    top: 2px;
   }
 }
