@@ -13,7 +13,7 @@ function generatePassword() {
   var generatedRandomPassword = "";
   if (passwordlength < 8) {
     document.getElementById("alert").innerHTML =
-      "Password Length must be greter than 8";
+      "Password Length must be greater than 8";
     document.getElementById("passwordlength").style.border = "2px solid red";
   } else {
     document.getElementById("passwordlength").style.border = "1px solid black";
