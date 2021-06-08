@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0; 
+}
+body {
+  width: 100%;
+  color: black;
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+}
+table {
+  padding: 20px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Courier New", Courier, monospace;
+  border: 3px double grey;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(8, 22, 61, 0.514),
+    0 6px 20px 0 rgba(10, 18, 131, 0.493);
+}
+td {
+  padding-bottom: 10px;
+}
+#passwordlength {
+  border: 1px double black;
+  outline: none;
+}
+#button {
+  cursor: pointer;
+  width: 40%;
+  height: 40px;
+  font-size: 18px;
+  background-color: white;
+  border: 1px solid rgb(172, 169, 169);
+  transition: box-shadow 0.5s;
+}
+#button:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  font-weight: 600;
+  color: darkgreen;
+}
+#alert {
+  text-align: center;
+  color: red;
+}
+#generatedpassword {
+  height: 20px;
+  font-size: 12pt;
+  padding: 2px;
+  font-weight: bold;
+}
+input:disabled {
+  background: white;
+  outline: none;
+  border: none;
+}
+.buttonIn {
+  position: relative;
+}
+#copy {
+  position: absolute;
+  top: 0;
+  border-radius: 5px;
+  right: 15px;
+  z-index: 2;
+  border: none;
+  top: 2px;
+  cursor: pointer;
+  color: grey;
+  background-color: #fcfcfc;
+  transform: translateX(2px);
+}
+#copy:hover {
+  color: black;
+  cursor: copy;
+}
+#message {
+  text-align: center;
+  color: green;
+}
+tbody > tr > :nth-child(2) {
+  display: flex;
+  text-align: center;
+}
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 1100px) {
+  table {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 890px) {
+  table {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #copy {
+    right: 10px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #button {
+    width: 50%;
+  }
+  #copy {
+    right: 4px;
+    top: 2px;
+  }
+}
